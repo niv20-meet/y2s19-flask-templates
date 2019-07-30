@@ -1,1 +1,20 @@
-<!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ljd</title>
+	 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<h1>blabla</h1>
+<p>my food is:</p>
+<h2>food</h2>
+<ul>
+	{% for fod in food %}
+	<li>{{fod}}</li>
+	{% endfor %}
+</ul>
+
+
+</body>
+</html>
